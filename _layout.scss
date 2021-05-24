@@ -19,8 +19,36 @@ body {
   box-shadow: 0 0 10px 2px;
 }
 
+.container-option-buttons:hover {
+  border-color: goldenrod 2px;
+  cursor: pointer;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
   margin-top: 20px;
-}
+  gap: 10px;
+
+  &-buttons {
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: blue;
+
+    &__1 {
+      background-color: red;
+    }
+
+    &__2 {
+      background-color: blue;
+    }
+
+    &__3 {
+      background-color: green;
+    }
+
+    &__4 {
+      background-color: yellow;
+    }
+  };

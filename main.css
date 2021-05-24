@@ -29,4 +29,27 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
   margin-top: 20px;
+  gap: 10px;
+}
+.grid-buttons {
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+}
+.grid-buttons__1 {
+  background-color: red;
+}
+.grid-buttons__2 {
+  background-color: blue;
+}
+.grid-buttons__3 {
+  background-color: green;
+}
+.grid-buttons__4 {
+  background-color: yellow;
+}
+
+.buttons:hover {
+  border-color: goldenrod;
+  cursor: pointer;
 }
