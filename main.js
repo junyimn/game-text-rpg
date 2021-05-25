@@ -62,6 +62,7 @@ const textCards = [
       },
       {
         text: "Leave it, you dont know what curses it may contain",
+        setState: { noBelongings: true },
         nextText: 3,
       },
     ],
@@ -79,7 +80,8 @@ const textCards = [
       },
       {
         text: "The merchant notice you had no bleongins and took pity on you. 'Tell you what kid, take this staff, its not great but it should protect you for awhile. You take the staff, thanking the kind merchant profundly",
-        setState: { staff: true },
+        requiredState: (currentState) => currentState.noBelongings,
+        setState: { noBelongings: false, staff: true },
         nextText: 4,
       },
       {
@@ -88,6 +90,37 @@ const textCards = [
       },
     ],
   },
+
+  {
+    id: 4,
+    text: "You thanked the merchant for the trade and put away your new weapon. Suddenly you hear a loud cry for help, they sound distressed, do you investigate? ",
+    options: [
+      {
+        text: "Yes , it is the right thing to do, furthermore, you now have a weapon!",
+        nextText: 5,
+      },
+      {
+        text: "No , this does not concern me, why should I put myself at risk? I do not know this land!",
+        nextText: 6,
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    text: "You thanked the merchant for the trade and put away your new weapon. Suddenly you hear a loud cry for help, they sound distressed, do you investigate? ",
+    options: [
+      {
+        text: "Yes , it is the right thing to do, furthermore, you now have a weapon!",
+        nextText: 5,
+      },
+      {
+        text: "No , this does not concern me, why should I put myself at risk? I do not know this land!",
+        nextText: 6,
+      },
+    ],
+  },
+
   {
     id: 100,
     text: "You walk hastily away. Some time has passed since you been walking, thus you decided to take a break by and old tavarn. You enter the tarvarn looking for the owner when suddenly you are ambushed by bandits, with no weapons, you life was ended swiftly. !!!YOU ARE DEAD!!! ",

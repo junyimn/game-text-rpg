@@ -25,6 +25,11 @@ body {
   box-shadow: 0 0 10px 2px;
 }
 
+.buttons:hover {
+  border-color: goldenrod 2px;
+  cursor: pointer;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -35,21 +40,9 @@ body {
   border-radius: 5px;
   padding: 5px 10px;
   outline: none;
+  border: orangered solid 2px;
 }
-.grid-buttons__1 {
-  background-color: red;
-}
-.grid-buttons__2 {
-  background-color: blue;
-}
-.grid-buttons__3 {
-  background-color: green;
-}
-.grid-buttons__4 {
-  background-color: yellow;
-}
-
-.buttons:hover {
-  border-color: goldenrod;
+.grid-buttons:hover {
+  border: goldenrod 2px solid;
   cursor: pointer;
 }

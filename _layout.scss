@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 10px 2px;
 }
 
-.container-option-buttons:hover {
+.buttons:hover {
   border-color: goldenrod 2px;
   cursor: pointer;
 }
@@ -34,21 +34,11 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
     outline: none;
-    background-color: blue;
+    border: orangered solid 2px;
+  }
 
-    &__1 {
-      background-color: red;
-    }
-
-    &__2 {
-      background-color: blue;
-    }
-
-    &__3 {
-      background-color: green;
-    }
-
-    &__4 {
-      background-color: yellow;
-    }
-  };
+  &-buttons:hover {
+    border: goldenrod 2px solid;
+    cursor: pointer;
+  }
+}
