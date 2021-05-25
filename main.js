@@ -30,7 +30,11 @@ const showOption = (option) => {
   return option.requiredState == null || option.requiredState(state);
 };
 
-const selectOption = (option) => {};
+const selectOption = (option) => {
+  const nextTextCardID = option.nextText;
+  state = Object.assign(state, option.setState);
+  showText(nextTextCardID);
+};
 
 const textCards = [
   {
