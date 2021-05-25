@@ -32,6 +32,9 @@ const showOption = (option) => {
 
 const selectOption = (option) => {
   const nextTextCardID = option.nextText;
+  if (nextTextCardID <= 0) {
+    return startGame();
+  }
   state = Object.assign(state, option.setState);
   showText(nextTextCardID);
 };
@@ -82,6 +85,16 @@ const textCards = [
       {
         text: "Stories of bandit pretending to be old merchants quickly rushed into your mind. You are in a forein land and approached by sketchy looking old man, you cant take the risk, espcially with no weapons. You keep a safe distance and refused to trade as you walk the other way",
         nextText: 100,
+      },
+    ],
+  },
+  {
+    id: 100,
+    text: "You walk hastily away. Some time has passed since you been walking, thus you decided to take a break by and old tavarn. You enter the tarvarn looking for the owner when suddenly you are ambushed by bandits, with no weapons, you life was ended swiftly. !!!YOU ARE DEAD!!! ",
+    options: [
+      {
+        text: "Restart?",
+        nextText: -1,
       },
     ],
   },
