@@ -1,2 +1,2 @@
 # rpg-game
-Project
+Ongoing process of developing an old-school text based RPG game
